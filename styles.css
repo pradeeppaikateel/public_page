@@ -329,13 +329,22 @@ img {
 }
 
 /* Key Skillsets */
+.key-skillsets-wrapper {
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+}
+
 .key-skillsets {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     gap: 16px;
-    margin-top: 32px;
-    padding: 24px 32px;
+    padding: 20px 32px;
     background: var(--bg-secondary);
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
@@ -345,18 +354,16 @@ img {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 14px 22px;
+    padding: 12px 20px;
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-full);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-primary);
     transition: all var(--transition-fast);
     cursor: default;
-    flex: 1 1 auto;
-    justify-content: center;
-    min-width: fit-content;
+    white-space: nowrap;
 }
 
 .skillset-item:hover {
@@ -367,7 +374,7 @@ img {
 }
 
 .skillset-item i {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--accent-primary);
 }
 
@@ -385,20 +392,26 @@ img {
 
 @media (max-width: 1024px) {
     .key-skillsets {
+        flex-wrap: wrap;
         justify-content: center;
     }
 }
 
 @media (max-width: 768px) {
+    .key-skillsets-wrapper {
+        margin-bottom: 40px;
+    }
+    
     .key-skillsets {
+        flex-wrap: wrap;
         justify-content: center;
-        padding: 20px;
+        padding: 16px 20px;
+        gap: 10px;
     }
     
     .skillset-item {
-        padding: 10px 16px;
-        font-size: 0.85rem;
-        flex: 0 1 auto;
+        padding: 10px 14px;
+        font-size: 0.8rem;
     }
 }
 
