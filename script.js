@@ -90,14 +90,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function animateCounter(element, target, duration = 2000) {
     let start = 0;
     const increment = target / (duration / 16);
+    const isDecimal = target % 1 !== 0;
     
     const timer = setInterval(() => {
         start += increment;
         if (start >= target) {
-            element.textContent = target;
+            element.textContent = isDecimal ? target.toFixed(1) : target;
             clearInterval(timer);
         } else {
-            element.textContent = Math.floor(start);
+            element.textContent = isDecimal ? start.toFixed(1) : Math.floor(start);
         }
     }, 16);
 }
@@ -108,7 +109,7 @@ const counterObserver = new IntersectionObserver((entries) => {
         if (entry.isIntersecting) {
             const counters = entry.target.querySelectorAll('[data-count]');
             counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-count'));
+                const target = parseFloat(counter.getAttribute('data-count'));
                 animateCounter(counter, target);
             });
             counterObserver.unobserve(entry.target);

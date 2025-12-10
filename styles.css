@@ -280,7 +280,7 @@ img {
     align-items: center;
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 60px 24px;
+    padding: 20px 24px 60px;
     position: relative;
     z-index: 1;
 }
@@ -329,7 +329,7 @@ img {
 }
 
 /* Key Skillsets */
-.key-skillsets-wrapper {
+.key-skillsets-container {
     width: 100%;
     max-width: var(--container-max-width);
     margin: 0 auto;
@@ -337,6 +337,9 @@ img {
     position: relative;
     z-index: 1;
     margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.95fr;
+    gap: 60px;
 }
 
 .key-skillsets {
@@ -344,10 +347,11 @@ img {
     flex-wrap: nowrap;
     justify-content: space-between;
     gap: 16px;
-    padding: 20px 32px;
+    padding: 20px 24px;
     background: var(--bg-secondary);
     border-radius: var(--radius-lg);
     border: 1px solid var(--border-color);
+    grid-column: 1 / -1;
 }
 
 .skillset-item {
@@ -467,10 +471,17 @@ img {
 }
 
 .stat-number {
-    display: block;
+    display: inline;
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--accent-primary);
+}
+
+.stat-unit {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    margin-left: 2px;
 }
 
 .stat-label {
