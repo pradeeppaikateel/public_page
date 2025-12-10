@@ -1,0 +1,46 @@
+About the job
+Get to know Okta
+
+Okta is The World’s Identity Company. We free everyone to safely use any technology, anywhere, on any device or app. Our flexible and neutral products, Okta Platform and Auth0 Platform, provide secure access, authentication, and automation, placing identity at the core of business security and growth.
+
+At Okta, we celebrate a variety of perspectives and experiences. We are not looking for someone who checks every single box - we’re looking for lifelong learners and people who can make us better with their unique experiences.
+
+Join our team! We’re building a world where Identity belongs to you.
+
+Senior Data Engineer - Enterprise Data Platform
+
+Get to know Data Engineering 
+
+Okta’s Business Operations team is on a mission to accelerate Okta’s scale and growth. We bring world-class business acumen and technology expertise to every interaction. We also drive cross-functional collaboration and are focused on delivering measurable business outcomes. Business Operations strives to deliver amazing technology experiences for our employees, and ensure that our offices have all the technology that is needed for the future of work.
+
+The Data Engineering team is focused on building platforms and capabilities that are utilized across the organization by sales, marketing, engineering, finance, product, and operations. The ideal candidate will have a strong engineering background with the ability to tie engineering initiatives to business impact.
+
+You will be part of a team doing detailed technical designs, development, and implementation of applications using cutting-edge technology stacks.
+
+The Senior Data Engineer Opportunity
+
+A Senior Data Engineer is responsible for designing, building, and maintaining scalable solutions. This role involves collaborating with data engineers, analysts, scientists and other engineers to ensure data availability, integrity, and security. The ideal candidate will have a strong background in cloud platforms, data warehousing, infrastructure as code, and continuous integration/continuous deployment (CI/CD) practices.
+
+What you’ll be doing:
+
+Design, develop, and maintain scalable data platforms using AWS, Snowflake, dbt, and Databricks.
+Use Terraform to manage infrastructure as code, ensuring consistent and reproducible environments.
+Develop and maintain CI/CD pipelines for data platform applications using GitHub and GitLab.
+Troubleshoot and resolve issues related to data infrastructure and workflows.
+Containerize applications and services using Docker to ensure portability and scalability.
+Conduct vulnerability scans and apply necessary patches to ensure the security and integrity of the data platform.
+Work with data engineers to design and implement Secure Development Lifecycle practices and security tooling (DAST, SAST, SCA, Secret Scanning) into automated CI/CD pipelines.
+Ensure data security and compliance with industry standards and regulations.
+Stay updated with the latest trends and technologies in data engineering and cloud platforms.
+
+What we are looking for:
+
+BS in Computer Science, Engineering or another quantitative field of study
+5+ years in a data engineering role
+5+ years’ experience working with SQL, ETL tools such as Airflow and dbt, with relational and columnar MPP databases like Snowflake or Redshift, hands-on experience with AWS (e.g., S3, Lambda, EMR, EC2, EKS)
+2+ years of experience managing CI/CD infrastructures, with strong proficiency in tools like GitHub Actions, Jenkins, ArgoCD, GitLab, or any CI/CD tool to streamline deployment pipelines and ensure efficient software delivery.
+2+ years of experience with Java, Python, Go, or similar backend languages.
+Experience with Terraform for infrastructure as code.
+Experience with Docker and containerization technologies.
+Experience working with lakehouse architectures such as Databricks and file formats like Iceberg and Delta
+Experience in designing, building, and managing complex deployment pipelines.
