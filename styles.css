@@ -66,6 +66,7 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     transition: background-color var(--transition-normal), color var(--transition-normal);
+    min-width: 1280px;
 }
 
 a {
@@ -178,38 +179,9 @@ img {
 }
 
 .hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    width: 30px;
-    height: 30px;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border: none;
-    cursor: pointer;
+    display: none !important;
 }
 
-.hamburger span {
-    display: block;
-    width: 24px;
-    height: 2px;
-    background: var(--text-primary);
-    border-radius: 2px;
-    transition: all var(--transition-fast);
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
 
 /* ===== Hero Section ===== */
 .hero {
@@ -394,30 +366,6 @@ img {
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.25) 100%);
 }
 
-@media (max-width: 1024px) {
-    .key-skillsets {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .key-skillsets-wrapper {
-        margin-bottom: 40px;
-    }
-    
-    .key-skillsets {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 16px 20px;
-        gap: 10px;
-    }
-    
-    .skillset-item {
-        padding: 10px 14px;
-        font-size: 0.8rem;
-    }
-}
 
 .hero-cta {
     display: flex;
@@ -1270,136 +1218,8 @@ img {
     font-size: 0.9rem !important;
 }
 
-/* ===== Responsive Design ===== */
-@media (max-width: 1024px) {
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .hero-description {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .hero-cta {
-        justify-content: center;
-    }
-    
-    .hero-stats {
-        justify-content: center;
-    }
-    
-    .hero-visual {
-        order: -1;
-    }
-    
-    .hero-titles {
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    :root {
-        --section-padding: 60px;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        top: var(--nav-height);
-        left: 0;
-        right: 0;
-        background: var(--bg-primary);
-        border-bottom: 1px solid var(--border-color);
-        padding: 20px;
-        flex-direction: column;
-        gap: 4px;
-        transform: translateY(-100%);
-        opacity: 0;
-        pointer-events: none;
-        transition: all var(--transition-normal);
-    }
-    
-    .nav-menu.active {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: all;
-    }
-    
-    .nav-link {
-        display: block;
-        padding: 12px 16px;
-        text-align: center;
-    }
-    
-    .hamburger {
-        display: flex;
-    }
-    
-    .hero-stats {
-        flex-direction: column;
-        gap: 24px;
-    }
-    
-    .stat {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .timeline::before {
-        left: 20px;
-    }
-    
-    .timeline-item {
-        padding-left: 60px;
-    }
-    
-    .timeline-marker {
-        left: 0;
-        width: 40px;
-        height: 40px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .education-card {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .education-icon {
-        margin: 0 auto;
-    }
-    
-    .scroll-indicator {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-name {
-        font-size: 2rem;
-    }
-    
-    .btn {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .timeline-content {
-        padding: 20px;
-    }
-    
-    .skill-card {
-        padding: 20px;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-}
+/* ===== Fixed Layout (No Responsive) ===== */
+/* Layout is fixed at desktop size for all devices */
 
 /* ===== Utility Classes ===== */
 .hidden {
